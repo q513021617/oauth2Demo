@@ -84,16 +84,27 @@ https://www.baidu.com/exchange?code=&client_id=&client_secret=
  有了这个 code，token 的安全性大大提高。因此，oAuth2.0 鼓励使用这种方式进行授权，而简单模式则是在不得已情况下才会使用。
    ![image](http://cdn.zhiyigo.cn/oath04.png)
    
- 源码:https://github.com/q513021617/oauth2Demo/tree/main/simgpleauth2
+ 
+```
+源码:https://github.com/q513021617/oauth2Demo/tree/main/simgpleauth2
+```
+
 ## 3、密码模式
  密码模式中，用户向客户端提供自己的用户名和密码。客户端使用这些信息，向 “服务商提供商” 索要授权。在这种模式中，用户必须把自己的密码给客户端，但是客户端不得储存密码。这通常用在用户对客户端高度信任的情况下，比如客户端是操作系统的一部分。
  一个典型的例子是同一个企业内部的不同产品要使用本企业的 oAuth2.0 体系。在有些情况下，产品希望能够定制化授权页面。由于是同个企业，不需要向用户展示“xxx将获取以下权限”等字样并询问用户的授权意向，而只需进行用户的身份认证即可。这个时候，由具体的产品团队开发定制化的授权界面，接收用户输入账号密码，并直接传递给鉴权服务器进行授权即可。
 
+
+```
 源码:https://github.com/q513021617/oauth2Demo/tree/main/passwordmodel
+```
+
 有一点需要特别注意的是，在第 2 步中，认证服务器需要对客户端的身份进行验证，确保是受信任的客户端。
   ![image](http://cdn.zhiyigo.cn/oath05.png)
 ## 4、客户端模式
  如果信任关系再进一步，或者调用者是一个后端的模块，没有用户界面的时候，可以使用客户端模式。鉴权服务器直接对客户端进行身份验证，验证通过后，返回 token。
 
  ![image](http://cdn.zhiyigo.cn/oath06.png)
-源码: 客户端模式
+
+```
+源码: https://github.com/q513021617/oauth2Demo/tree/main/clientmodel
+```
