@@ -9,9 +9,9 @@ spring:
   # 配置数据源
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://49.234.218.89:3306/blog?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
-    username: blog
-    password: Ea6MBAN7tGdHAepZ
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
+           username: root
+                password: 12345678
     type: com.alibaba.druid.pool.DruidDataSource
   security:
     user:
