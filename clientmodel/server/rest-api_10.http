@@ -1,0 +1,8 @@
+GET http://localhost:9911/api/userinfo
+Accept: application/json
+Cache-Control: no-cache
+content-type: application/x-www-form-urlencoded
+Authorization: Bearer l7tndz_WSM6eQ1LpCRCuL9Xzjyc
+
+###
+

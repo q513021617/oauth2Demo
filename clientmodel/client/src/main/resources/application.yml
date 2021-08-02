@@ -1,0 +1,6 @@
+server:
+  port: 9911
+uaa:
+  clientId: admin
+  clientSecret: 123456
+  tokenEndpoint: http://localhost:9910

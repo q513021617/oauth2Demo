@@ -1,0 +1,10 @@
+POST http://localhost:8789/oauth/token?username=liuzj&password=123456&grant_type=password&client_id=officialclient&client_secret=123456
+Accept: application/json
+Cache-Control: no-cache
+content-type: application/x-www-form-urlencoded
+
+grant_type=client_credentials&username=bobo&password=xyz&scope=read_userinfo
+
+
+###
+
